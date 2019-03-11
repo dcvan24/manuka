@@ -1,0 +1,3 @@
+vagrant/.vagrant
+vagrant/*.log
+.DS_Store
