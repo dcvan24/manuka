@@ -12,10 +12,10 @@ The pre-requisites are listed below but the requirments are not tight.
 - Docker 18.09 (The plugin interface has changed a little bit since 18)
 - Go 1.12 (> 1.10 and < 1.19)
 
-A [Vagrant](./vagrant) environment is provided here for quickstart, which pre-installs all the pre-requisites in the VM. To launch the environment, make sure you have [VirtualBox]() and [Vagrant]() properly installed on your machine:
+A [Vagrant](./vagrant) environment is provided here for quickstart, which pre-installs all the pre-requisites in the VM. To launch the environment, make sure you have [VirtualBox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/) properly installed on your machine:
 
 ```bash
-$ vagrant up && vagrant ssh
+$ cd vagrant && vagrant up && vagrant ssh
 ```
 
 If everything works as expected, you should log into a Ubuntu 18.10 VM running locally on your machine via SSH. To clean up the environment, 
@@ -31,7 +31,7 @@ If you want to initialize the dev environment on a Linux box, simply runs the [b
 First of all, the environmental variable `$GOPATH` needs to set properly, default to `${HOME}/go`. Go requires all the go code developed under `$GOPATH`, so the toolkit needs to be placed under `$GOPATH`. A workaround to avoid diving deep into the `$GOPATH` is to create a soft link of the code base elsewhere. To fetch the toolkit into `$GOPATH`.
 
 ```bash
-$ go get dcvan24/manuka
+$ go get github.com/dcvan24/manuka
 ```
 
 
