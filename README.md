@@ -8,7 +8,7 @@ The toolkit serves as a base environment for [Docker graphdriver plugin](https:/
 ### Pre-requisites
 The pre-requisites are listed below but the requirments are not tight. 
  
-- Linux amd64 (preferably Ubuntu 18.10)
+- Linux amd64 (preferably Ubuntu 18.04)
 - Docker 18.09 (The plugin interface has changed a little bit since 18)
 - Go 1.12 (> 1.10 and < 1.19)
 
@@ -18,13 +18,13 @@ A [Vagrant](./vagrant) environment is provided here for quickstart, which pre-in
 $ cd vagrant && vagrant up && vagrant ssh
 ```
 
-If everything works as expected, you should log into a Ubuntu 18.10 VM running locally on your machine via SSH. To clean up the environment, 
+If everything works as expected, you should log into a Ubuntu 18.04 VM running locally on your machine via SSH. To clean up the environment, 
 
 ```bash 
 $ vagrant destroy
 ```
 
-If you want to initialize the dev environment on a Linux box, simply runs the [build.sh](./vagrant/build.sh) script on the box (assuming it runs Ubuntu 18.10).
+If you want to initialize the dev environment on a Linux box, simply runs the [build.sh](./vagrant/build.sh) script on the box (assuming it runs Ubuntu 18.04).
 
 ### Go environment setup
 
